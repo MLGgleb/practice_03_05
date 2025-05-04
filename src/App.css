@@ -1,38 +1,143 @@
 .App {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  font-family: sans-serif;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+.result {
+  margin-top: 30px;
+  text-align: left;
+}
+
+.result p {
+  margin: 8px 0;
+  font-weight: bold;
+  color: #333;
+}
+
+.result img {
+  max-width: 100%;
+  margin-top: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.navbar {
+  background-color: #007bff;
+  padding: 12px 24px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: #0056b3;
+}
+
+input[type="file"] {
+  margin: 16px 0;
+  font-size: large;
+}
+
+input[type="number"] {
+  padding: 8px;
+  width: 100px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin: 20px;
+  font-size: large;
+}
+
+label {
+  display: block;
+  margin: 12px 0 4px;
+  color: #555;
+  font-size: large;
+}
+
+.stats-page {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: sans-serif;
+}
+
+.stats-page h1 {
+  color: #333;
+  margin-bottom: 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.download-button {
+  background-color: #28a745;
   color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  margin-bottom: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.App-link {
-  color: #61dafb;
+.download-button:hover {
+  background-color: #1e7e34;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.request-card {
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  padding: 16px;
+  margin-bottom: 20px;
+}
+
+.request-card p {
+  margin: 6px 0;
+  color: #555;
+}
+
+.request-card img {
+  max-width: 100%;
+  margin-top: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
 }
